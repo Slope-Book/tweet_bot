@@ -14,7 +14,7 @@ tweets = ["文言１", "文言２", "文言３"]
 
 randomtweet = tweets[random.randrange(len(tweets))]
 
-timestamp = datetime.datetime.today() + datetime.taimedelta(hours=9)
+timestamp = datetime.datetime.today() + datetime.timedelta(hours=9)
 timestamp = str(timestamp.strftime("%Y/%m/%d%H:%M"))
 
 params = {
