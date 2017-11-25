@@ -5,10 +5,10 @@ import os
 import random
 import datetime
 
-twitter = OAuth1Session(consumer_key=os.environ["consumer_key"],
-                        consumer_secret=os.environ["consumer_secret"],
-                        consumer_token_key=os.environ["access_token_key"],
-                        consumer_token_secret=os.environ["access_token_secret"]
+twitter = OAuth1Session(os.environ["consumer_key"],
+                        os.environ["consumer_secret"],
+                        os.environ["access_token_key"],
+                        os.environ["access_token_secret"]
                         )
 tweets = ["文言１", "文言２", "文言３"]
 
