@@ -89,7 +89,7 @@ class PrepareChain(object):
         node = self.tagger.parseToNode(sentence)
         while node:
             if node.posid != 0:
-                morpheme = str(node.surface)
+                morpheme = node.surface
                 morphemes.append(morpheme)
             node = node.next
         return morphemes
